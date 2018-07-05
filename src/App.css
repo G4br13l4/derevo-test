@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* header */
+.header-img{
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0,0.4), rgba(0, 0, 0,0.4)), url("header.jpg");
+  background-size: cover;
+  background-position:50% 57%;
+  height: 55vh;
+  color:white;
+}
+
+h1 {
+  margin-top: 6%;
+  font-size: 5.2em;
+}
+
+.header-img p {
+  font-size: 1.4em;
+}
+
+.header-img p div {
+  background: white;
+  height: 1px;
+  width:20px;
+  display: inline-block;
+  margin: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    margin-top: 16%;
+    font-size: 4.7em;
+    margin-bottom: 0;
+  }
+
+  .header-img{
+    height: 34vh;
+  }
+}
+
+/* nav */
+.nav {
+  background:#544545;
+  height: 5vh;
+  display: flex;
+  justify-content: center; 
+}
+
+.nav-item {
+    color:white;
+    text-align: center;
+    font-size: 1.4em;
+} 
+
+.nav-item:hover{
+  cursor: pointer;
+  background: #2d2626;
+}
+
+.nav-item p{
+  padding: 3%;
+}
+
+/* dashboard */
+.background{
+  background:#eaeaea;
+}
+
+.dashboard {
+  background:white;
+}
+
+/* Box with graphics */
+
+.subtitle{
+  background:rgb(92, 198, 57);
+  color: white;
+  margin-top: 1%;
+  font-size: 1.5em;
+}
+
+.subtitle p{
+  padding: 0.9%;
+}
+
+.gauge-chart {
+  width:100%;
+  margin-top: 8%;
+}
+
+.gauge-charts {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 600px) {
+  .subtitle{
+    margin-top: 4%;
+    font-size: 1em;
+  }
+
+  .subtitle p{
+    padding: 3% 0%;
+  }
+}
+
+/* Box with table */
+
+.search-bar{
+  margin-top: 5%;
+}
+
+@media only screen and (max-width: 600px) {
+  .hide-col {
+      display: none;
+  }
+}
